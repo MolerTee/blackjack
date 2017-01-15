@@ -33,5 +33,11 @@ public class CardTest {
     assertEquals(CardSuit.HEARTS, card.getSuit());
   }
 
+  @Test
+  public void canGetIntFromNumber(){
+    card = new Card(CardNumber.TWO, CardSuit.HEARTS);
+    assertEquals(2, card.numberToInteger());
+  }
+
 
 }

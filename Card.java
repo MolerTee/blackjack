@@ -15,4 +15,10 @@ public class Card {
   public CardSuit getSuit(){
     return this.suit;
   }
+
+  public int numberToInteger(){
+    int value = this.number.ordinal();
+    return value = value + 1;
+  }
+
 }

@@ -1,12 +1,18 @@
-// public class player{
+public class Player{
 
-//   private PlayerName player;
+  private String player;
+  private Hand hand;
 
-//   public Player(PlayerName player) {
-//     this.player = player;
-//   }
+  public Player(String player) {
+    this.player = player;
+    this.hand = new Hand();
+  }
 
-//   public PlayerName getName(){
-//     return this.player;
-//   }
-// }
+  public String getName(){
+    return this.player;
+  }
+
+  public Hand getHand(){
+    return this.hand;
+  }
+}
