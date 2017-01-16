@@ -4,6 +4,7 @@ import org.junit.*;
 public class PlayerTest{
 
   Player player;
+  Card card;
 
   @Before 
   public void before(){
@@ -21,11 +22,11 @@ public class PlayerTest{
     assertEquals(0, hand.cardCount());
   }
 
-  // @Test
-  // public void playerHasCardsInHand(){
-  //   Card card1 = new Card(CardNumber.ACE, CardSuit.SPADES);
-  //   Card card2 = new Card(CardNumber.FOUR, CardSuit.HEARTS);
-    
-  // }
+ @Test
+ public void playerHasHand(){
+  Card card = new Card(CardNumber.TWO, CardSuit.SPADES);
+  Hand hand = 
+  assertEquals(1, hand.cardCount());
+ }
 
 }

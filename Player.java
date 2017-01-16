@@ -15,4 +15,8 @@ public class Player{
   public Hand getHand(){
     return this.hand;
   }
+
+  public int handTotal(){
+    return this.hand.handTotal();
+  }
 }
